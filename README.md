@@ -68,7 +68,5 @@ This page includes:
 
 ![Sticky Navigation Screenshot](screenshots/sticky-nav.png)
 
-https://your-username.github.io/week-1-day-3-assignment/
-```
 
 
