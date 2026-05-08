@@ -48,24 +48,27 @@ This page includes:
 
 ## Screenshots
 
-Add your screenshots after testing:
+### Layout Page - Desktop View
 
-### Desktop View
+![Layout Desktop Screenshot](screenshots/layout-desktop.png)
 
-![Desktop Screenshot](screenshots/desktop-view.png)
+### Layout Page - Mobile View
 
-### Mobile View
+![Layout Mobile Screenshot](screenshots/layout-mobile.png)
 
-![Mobile Screenshot](screenshots/mobile-view.png)
+### Gallery Page - Desktop View
 
-## GitHub Pages Live Link
+![Gallery Desktop Screenshot](screenshots/gallery-desktop.png)
 
-Add your GitHub Pages live link here after deployment:
+### Gallery Page - Mobile View
 
-```text
+![Gallery Mobile Screenshot](screenshots/gallery-mobile.png)
+
+### Sticky Navigation Page
+
+![Sticky Navigation Screenshot](screenshots/sticky-nav.png)
+
 https://your-username.github.io/week-1-day-3-assignment/
 ```
 
-## Self-Assessment Note
 
-I completed the layout using Flexbox, CSS Grid, sticky navigation, responsive media queries, and a CSS-only FAQ accordion. I tested the pages locally and reviewed the code before submission.
