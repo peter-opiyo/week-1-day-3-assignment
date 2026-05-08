@@ -1,0 +1,340 @@
+/* I used AI to help create this shared stylesheet. This CSS styles the Flexbox landing page, CSS Grid gallery, sticky navbar page, and bonus FAQ accordion. */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background: #f5f7fb;
+    color: #18212f;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Task 1: Flexbox landing page */
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e6eaf0;
+}
+
+.navbar,
+.simple-nav,
+.sticky-navbar,
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 18px 24px;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: #0f766e;
+}
+
+.nav-links,
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.nav-links a,
+.footer-links a,
+.simple-nav a:not(.logo) {
+    font-weight: 600;
+    color: #334155;
+}
+
+.nav-links a:hover,
+.footer-links a:hover,
+.simple-nav a:hover {
+    color: #0f766e;
+}
+
+.hero {
+    min-height: 360px;
+    padding: 60px 24px;
+    background: linear-gradient(135deg, #0f766e, #14b8a6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    max-width: 780px;
+    margin: 0 0 16px;
+    font-size: clamp(2rem, 5vw, 3.8rem);
+    line-height: 1.1;
+}
+
+.hero p {
+    max-width: 680px;
+    margin: 0 0 28px;
+    font-size: 1.15rem;
+}
+
+.button,
+button {
+    display: inline-block;
+    border: 0;
+    border-radius: 999px;
+    padding: 13px 24px;
+    background: #f97316;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover,
+button:hover {
+    background: #c2410c;
+    transform: translateY(-2px);
+}
+
+.features-section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 56px 24px;
+    display: flex;
+    gap: 24px;
+}
+
+.feature-card {
+    flex: 1;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+    font-size: 2.4rem;
+    margin-bottom: 12px;
+}
+
+.feature-card h2 {
+    margin: 0 0 10px;
+}
+
+.footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 26px 24px;
+    border-top: 1px solid #e6eaf0;
+}
+
+/* Task 2: CSS Grid gallery */
+.page-header {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
+    text-align: center;
+}
+
+.simple-nav {
+    margin-bottom: 40px;
+    background: #ffffff;
+    padding: 16px 20px;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.page-header h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    margin-bottom: 8px;
+}
+
+.page-header p {
+    max-width: 680px;
+    margin: 0 auto;
+    color: #475569;
+}
+
+.gallery-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.gallery-item {
+    margin: 0;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.gallery-item figcaption {
+    padding: 14px 16px;
+    font-weight: 700;
+    color: #334155;
+}
+
+/* Task 3: Sticky navbar page */
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffffff;
+    padding: 16px 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px 24px 80px;
+}
+
+.content-section {
+    min-height: 520px;
+    padding: 56px 0;
+    border-bottom: 1px solid #e6eaf0;
+}
+
+.content-section h1,
+.content-section h2 {
+    color: #0f766e;
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 18px;
+}
+
+.content-section p {
+    font-size: 1.05rem;
+    color: #475569;
+}
+
+/* Bonus: CSS-only FAQ accordion */
+.faq-section details {
+    margin-bottom: 14px;
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.faq-section summary {
+    list-style: none;
+    padding: 18px 20px;
+    cursor: pointer;
+    font-weight: 700;
+    background: #e0f2f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-section summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-section summary::after {
+    content: '+';
+    font-size: 1.5rem;
+    color: #0f766e;
+}
+
+.faq-section details[open] summary::after {
+    content: '−';
+}
+
+.faq-section details p {
+    margin: 0;
+    padding: 18px 20px;
+    border-left: 4px solid #0f766e;
+    background: #ffffff;
+}
+
+@media (max-width: 1024px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar,
+    .simple-nav,
+    .sticky-navbar,
+    .footer,
+    .nav-links,
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .features-section {
+        flex-direction: column;
+    }
+
+    .feature-card {
+        width: 100%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-wrapper,
+    .page-header,
+    .content-page {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .content-section {
+        min-height: auto;
+        padding: 44px 0;
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navigation Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- I used AI to help build this sticky navigation page. This code creates anchor links that scroll to matching page sections while the navbar stays visible at the top. -->
+    <nav class="sticky-navbar">
+        <a class="logo" href="layout.html">FastSend Guide</a>
+        <div class="nav-links">
+            <a href="#overview">Overview</a>
+            <a href="#payments">Payments</a>
+            <a href="#security">Security</a>
+            <a href="#growth">Growth</a>
+            <a href="#faq">FAQ</a>
+        </div>
+    </nav>
+
+    <main class="content-page">
+        <section id="overview" class="content-section">
+            <h1>Overview</h1>
+            <p>FastSend is a fictional Kenyan payment platform designed to help people send money, manage records, and support small business transactions from one simple interface.</p>
+            <p>The goal is to make digital payments easier for students, traders, garage owners, restaurants, and service providers who need reliable transaction records.</p>
+        </section>
+
+        <section id="payments" class="content-section">
+            <h2>Payments</h2>
+            <p>Users can send money instantly, confirm successful transfers, and keep a simple record of who paid, when they paid, and why the payment was made.</p>
+            <p>This is useful for businesses that want to reduce manual paperwork and improve their daily cash management process.</p>
+        </section>
+
+        <section id="security" class="content-section">
+            <h2>Security</h2>
+            <p>The platform uses verification steps before completing important transactions. This reduces mistakes and helps users feel confident when moving money.</p>
+            <p>Good security also protects customers from sharing sensitive details with the wrong person or sending money to incorrect accounts.</p>
+        </section>
+
+        <section id="growth" class="content-section">
+            <h2>Business Growth</h2>
+            <p>FastSend gives business owners simple reports that can help them understand sales activity, repeat customers, and payment trends.</p>
+            <p>With better records, a business can plan stock, manage expenses, and make informed decisions about future growth.</p>
+        </section>
+
+        <section id="faq" class="content-section faq-section">
+            <h2>Frequently Asked Questions</h2>
+
+            <details>
+                <summary>What is FastSend?</summary>
+                <p>FastSend is a fictional Kenyan digital payment product created for this CSS layout assignment.</p>
+            </details>
+
+            <details>
+                <summary>Who can use it?</summary>
+                <p>It is designed for small businesses, students, families, and independent service providers.</p>
+            </details>
+
+            <details>
+                <summary>Does the navbar stay visible?</summary>
+                <p>Yes. The navbar uses sticky positioning, so it stays at the top while you scroll.</p>
+            </details>
+
+            <details>
+                <summary>Is the FAQ built with JavaScript?</summary>
+                <p>No. The FAQ uses only HTML details and summary elements with CSS styling.</p>
+            </details>
+
+            <details>
+                <summary>Can this layout work on mobile?</summary>
+                <p>Yes. The CSS includes responsive styles so content adjusts on smaller screens.</p>
+            </details>
+        </section>
+    </main>
+</body>
+</html>
